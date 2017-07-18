@@ -1,5 +1,5 @@
-# Splicing analysis (Docker)
-Docker to run splicing analysis using VAST-TOOLS
+# VAST-TOOLS (Docker)
+Docker to run VAST-TOOLS for splicing quantification and analysis
 
 ## Available software
 - [vast-tools](https://github.com/vastgroup/vast-tools) 1.2.0 (run using the `vast-tools` command)
