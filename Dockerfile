@@ -27,3 +27,5 @@ ENV vasttools=vast-tools
 COPY ${vasttools} ${vasttools}
 
 ENV PATH="${PATH}:${SW}/${vasttools}"
+RUN locale-gen en_US en_US.UTF-8 hu_HU hu_HU.UTF-8
+RUN dpkg-reconfigure locales
