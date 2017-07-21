@@ -10,6 +10,7 @@ RUN apt-get install -y r-base
 RUN apt-get install -y libcurl4-openssl-dev
 RUN apt-get install -y libssl-dev
 RUN apt-get install -y libssh2-1-dev
+RUN apt-get install -y perl
 
 RUN echo "r <- getOption('repos'); r['CRAN'] <- 'http://cran.us.r-project.org'; options(repos = r);" > ~/.Rprofile
 RUN Rscript -e "install.packages('optparse')"
@@ -27,5 +28,5 @@ ENV vasttools=vast-tools
 COPY ${vasttools} ${vasttools}
 
 ENV PATH="${PATH}:${SW}/${vasttools}"
-RUN locale-gen en_US en_US.UTF-8 hu_HU hu_HU.UTF-8
-RUN dpkg-reconfigure locales
+RUN locale-gen --purge en_US.UTF-8
+RUN echo -e 'LANG="en_US.UTF-8"\nLANGUAGE="en_US:en"\n' > /etc/default/locale
