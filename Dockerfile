@@ -1,12 +1,11 @@
 # vast-tools
 # Usage: vast-tools [SUBCOMMAND]
-FROM ubuntu:16.10
+FROM r-base:3.5.0
 MAINTAINER Nuno Agostinho <nunodanielagostinho@gmail.com>
 
 RUN apt-get update
 
 RUN apt-get install -y bowtie
-RUN apt-get install -y r-base
 RUN apt-get install -y libcurl4-openssl-dev
 RUN apt-get install -y libssl-dev
 RUN apt-get install -y libssh2-1-dev
