@@ -2,7 +2,7 @@
 Docker to run VAST-TOOLS for splicing quantification and analysis
 
 ## Available software
-- [vast-tools](https://github.com/vastgroup/vast-tools) 2.0.0 (run using the `vast-tools` command)
+- [vast-tools](https://github.com/vastgroup/vast-tools) 2.0.1 (run using the `vast-tools` command)
 - Bowtie
 - [R](https://r-project.org) (and multiple CRAN packages, including `ggplot2`)
 
