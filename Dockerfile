@@ -1,6 +1,6 @@
 # vast-tools
 # Usage: vast-tools [SUBCOMMAND]
-FROM r-base:3.5.0
+FROM r-base:4.0.3
 MAINTAINER Nuno Agostinho <nunodanielagostinho@gmail.com>
 
 RUN apt-get update
